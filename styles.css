@@ -264,6 +264,7 @@ body {
         background 0.4s cubic-bezier(.4,2,.3,1);
     will-change: transform, box-shadow;
     overflow: hidden;
+    animation: fadeInUp 2s cubic-bezier(.22,1,.36,1);
 }
 
 .nav-btn::before {
