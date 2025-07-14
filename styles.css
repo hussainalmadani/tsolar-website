@@ -66,10 +66,7 @@ body {
 .welcome {
     display: none;
 }
-    100% {
-        transform: scale(1.12) translateY(-8px);
-    }
-}
+/* Removed invalid block that caused '{ expected' error */
 
 .nav-btn:hover::before, .nav-btn:focus::before {
     opacity: 1;
