@@ -28,8 +28,8 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition:
-        transform 0.2s cubic-bezier(.4,2,.3,1),
-        box-shadow 0.2s,
+        transform 0.3s cubic-bezier(.22,1,.36,1),
+        box-shadow 0.3s cubic-bezier(.22,1,.36,1),
         background 0.4s cubic-bezier(.4,2,.3,1);
     overflow: hidden;
 }
@@ -46,8 +46,10 @@ body {
 }
 
 .nav-btn:hover, .nav-btn:focus {
-    transform: translateY(-4px) scale(1.07);
-    box-shadow: 0 8px 32px 0 rgba(0,163,255,0.25), 0 0 0 4px #00A3FF33;
+    transform: translateY(-8px) scale(1.12);
+    box-shadow:
+        0 12px 36px 0 rgba(0,163,255,0.25),
+        0 0 0 6px #00A3FF33;
     background: linear-gradient(90deg, #00A3FF 0%, #0077b6 100%);
 }
 
