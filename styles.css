@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #00A3FF;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    display: flex;
+    gap: 24px;
+    z-index: 10;
+}
+
+.nav-btn {
+    position: relative;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #0077b6 0%, #00A3FF 100%);
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 4px 24px rgba(0,163,255,0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s cubic-bezier(.4,2,.3,1), box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.08);
+    border-radius: 32px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.nav-btn:hover, .nav-btn:focus {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,163,255,0.25);
+}
+
+.nav-btn:hover::before, .nav-btn:focus::before {
+    opacity: 1;
+}
+
+.nav-btn:active {
+    transform: scale(0.98);
+}
+
+.welcome {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 24px rgba(0,163,255,0.25);
+    opacity: 0;
+    animation: fadeIn 2s cubic-bezier(.4,2,.3,1) forwards;
+    margin-top: 120px;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
