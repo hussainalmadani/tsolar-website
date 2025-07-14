@@ -62,9 +62,9 @@ body {
     transform: scale(0.98);
 }
 
-/* Remove .welcome styles */
 .welcome {
     display: none;
+}
 }
 /* Removed invalid block that caused '{ expected' error */
 
