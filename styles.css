@@ -1,5 +1,4 @@
 body {
-    display: block;
     background: #fff;
     margin: 0;
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
@@ -47,9 +46,9 @@ body {
 }
 
 .nav-btn:hover, .nav-btn:focus {
-    transform: scale(1.12) translateY(-6px);
+    transform: scale(1.13) translateY(-8px);
     box-shadow:
-        0 12px 32px 0 rgba(0,163,255,0.18),
+        0 16px 48px 0 rgba(0,163,255,0.22),
         0 0 0 16px #eaf6ff;
     background: linear-gradient(90deg, #00A3FF 0%, #0077b6 100%);
 }
@@ -60,6 +59,7 @@ body {
 
 .nav-btn:active {
     transform: scale(0.98);
+}
 }
 
 .welcome {
