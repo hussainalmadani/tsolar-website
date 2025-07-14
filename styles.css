@@ -60,23 +60,3 @@ body {
 .nav-btn:active {
     transform: scale(0.98);
 }
-}
-
-.welcome {
-    display: none;
-}
-}
-/* Removed invalid block that caused '{ expected' error */
-
-.nav-btn:hover::before, .nav-btn:focus::before {
-    opacity: 1;
-}
-
-.nav-btn:active {
-    transform: scale(0.98);
-}
-
-/* Remove .welcome styles */
-.welcome {
-    display: none;
-}
