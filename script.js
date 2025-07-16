@@ -32,3 +32,33 @@
         });
     }
 })();
+
+// Breadcrumb bar logic
+(function() {
+    const pageTitles = {
+        'index.html': 'Home',
+        'about.html': 'About',
+        'contact.html': 'Contact',
+        'ourproducts.html': 'Our Products'
+    };
+    const current = location.pathname.split('/').pop();
+    const list = document.getElementById('breadcrumb-list');
+    if (list) {
+        // Always start with Home
+        const homeLi = document.createElement('li');
+        if (current !== 'index.html') {
+            const a = document.createElement('a');
+            a.href = 'index.html';
+            a.textContent = 'Home';
+            homeLi.appendChild(a);
+        } else {
+            homeLi.textContent = 'Home';
+        }
+        list.appendChild(homeLi);
+        if (current !== 'index.html') {
+            const pageLi = document.createElement('li');
+            pageLi.textContent = pageTitles[current] || current;
+            list.appendChild(pageLi);
+        }
+    }
+})();
