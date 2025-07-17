@@ -5,48 +5,49 @@ body {
     min-height: 100vh;
 }
 
-.nav-history {
+.breadcrumb-bar {
     width: 100%;
     background: #f7fbff;
     border-bottom: 2px solid #eaf6ff;
     box-shadow: 0 2px 16px 0 rgba(0,163,255,0.06);
-    padding: 12px 32px 8px 32px;
+    padding: 10px 32px 8px 32px;
     display: flex;
     align-items: center;
-    gap: 18px;
     position: relative;
     z-index: 100;
 }
-.nav-history h3 {
-    color: #0077b6;
-    margin: 0 18px 0 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    flex-shrink: 0;
-}
-#history-list {
+.breadcrumb-list {
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    gap: 8px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-#history-list li {
+.breadcrumb-list li {
     margin: 0;
+    color: #0077b6;
+    font-weight: 600;
+    font-size: 1rem;
 }
-#history-list a {
+.breadcrumb-list a {
     color: #0077b6;
     text-decoration: underline;
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.2s;
 }
-#history-list a:hover {
+.breadcrumb-list a:hover {
     color: #00A3FF;
 }
+.breadcrumb-list li:not(:last-child)::after {
+    content: '>';
+    color: #0077b6;
+    margin: 0 8px;
+    font-weight: 400;
+}
 
-.nav-sidebar { display: none !important; }
+.nav-history, .nav-sidebar { display: none !important; }
 /* Hero Section */
 .hero {
     display: flex;
@@ -343,24 +344,23 @@ body {
     transform: scale(0.98);
 }
 
-.nav-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 100vh;
-    background: #f7fbff;
-    border-right: 2px solid #eaf6ff;
-    box-shadow: 2px 0 16px 0 rgba(0,163,255,0.06);
-    padding: 32px 16px 16px 16px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.nav-sidebar h3 {
-    color: #0077b6;
-    margin-bottom: 18px;
+/* Bubble Button */
+.bubble-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #00A3FF 0%, #0077b6 100%);
+    color: #fff;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
+    border: none;
+    border-radius: 32px;
+    padding: 16px 36px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,163,255,0.13);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+.bubble-btn:hover {
+    background: linear-gradient(90deg, #0077b6 0%, #00A3FF 100%);
+    transform: scale(1.05);
 }
