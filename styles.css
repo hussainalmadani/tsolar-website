@@ -452,3 +452,10 @@ body {
     font-weight: 700;
     text-align: center;
 }
+.clients-section h2 {
+    text-align: center;
+    color: #0077b6;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 32px 0;
+}
