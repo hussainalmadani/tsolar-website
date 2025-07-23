@@ -303,6 +303,35 @@ body {
     box-shadow: 0 2px 16px 0 rgba(0,163,255,0.10);
 }
 
+.navbar-facebook {
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.facebook-btn {
+    background: #1877f3;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px 0 rgba(24,119,243,0.10);
+    text-decoration: none;
+    font-size: 1.08rem;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.facebook-btn:hover {
+    background: #145db2;
+    box-shadow: 0 4px 16px 0 rgba(24,119,243,0.18);
+}
+
 .nav-btn {
     position: relative;
     padding: 12px 32px;
