@@ -305,7 +305,7 @@ body {
 
 .navbar-facebook {
     position: absolute;
-    right: 48px;
+    right: 16px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -331,9 +331,9 @@ body {
     height: 28px;
 }
 .facebook-btn:hover {
-    background: #f0f4fa;
-    color: #145db2 !important;
-    border-color: #145db2;
+    background: #1877f3;
+    color: #fff !important;
+    border-color: #1877f3;
 }
 
 .nav-btn {
