@@ -305,7 +305,7 @@ body {
 
 .navbar-facebook {
     position: absolute;
-    right: 16px;
+    right: 48px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
