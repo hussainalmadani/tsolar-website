@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     min-height: 100vh;
+    padding-top: 76px;
 }
 
 .breadcrumb-bar {
@@ -282,22 +283,24 @@ body {
 }
 
 .navbar {
-    position: relative;
-    top: unset;
-    right: unset;
+    position: fixed;
+    top: 0;
     left: 0;
+    right: 0;
     display: flex;
     gap: 24px;
-    z-index: 10;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 0;
     padding-left: 48px;
     padding-right: 48px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    min-height: 68px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    min-height: 72px;
+    background: linear-gradient(90deg, #0077b6 0%, #00A3FF 100%);
+    box-shadow: 0 2px 16px 0 rgba(0,163,255,0.10);
 }
 
 .nav-btn {
