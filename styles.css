@@ -445,3 +445,9 @@ body {
         font-size: 1rem;
     }
 }
+.updates h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 36px;
+    font-weight: 700;
+}
