@@ -282,12 +282,15 @@ body {
 }
 
 .navbar {
-    position: absolute;
-    top: 32px;
-    right: 60px;
+    position: relative;
+    top: unset;
+    right: unset;
+    left: 0;
     display: flex;
     gap: 24px;
     z-index: 10;
+    justify-content: center;
+    width: 100%;
 }
 
 .nav-btn {
