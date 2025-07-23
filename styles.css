@@ -299,7 +299,7 @@ body {
     padding-top: 22px;
     padding-bottom: 22px;
     min-height: 72px;
-    background: linear-gradient(90deg, #0077b6 0%, #00A3FF 100%);
+    background: #fff;
     box-shadow: 0 2px 16px 0 rgba(0,163,255,0.10);
 }
 
