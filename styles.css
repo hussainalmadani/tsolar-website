@@ -467,3 +467,17 @@ body {
     margin-right: 4px;
     line-height: 1;
 }
+.faq-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #0077b6;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-right: 12px;
+    vertical-align: middle;
+}
