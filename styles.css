@@ -479,8 +479,9 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     margin-right: 12px;
+    margin-left: 10px;
     vertical-align: middle;
 }
 .faq-item {
-    margin-left: 18px;
+    margin-left: 0;
 }
