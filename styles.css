@@ -481,7 +481,26 @@ body {
     margin-right: 12px;
     margin-left: 10px;
     vertical-align: middle;
+    flex-shrink: 0;
 }
 .faq-item {
+    display: flex;
+    align-items: flex-start;
     margin-left: 0;
+    margin-bottom: 24px;
+}
+.faq-content {
+    display: flex;
+    flex-direction: column;
+}
+.faq-item h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+}
+.faq-item p {
+    margin: 0;
+    color: #444;
+    font-size: 1rem;
 }
