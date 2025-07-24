@@ -488,10 +488,11 @@ body {
     align-items: flex-start;
     margin-left: 0;
     margin-bottom: 24px;
-}
-.faq-content {
-    display: flex;
     flex-direction: column;
+}
+.faq-row {
+    display: flex;
+    align-items: center;
 }
 .faq-item h3 {
     margin: 0 0 6px 0;
@@ -500,7 +501,7 @@ body {
     color: #222;
 }
 .faq-item p {
-    margin: 0;
+    margin: 0 0 0 54px;
     color: #444;
     font-size: 1rem;
 }
