@@ -101,7 +101,8 @@ body {
     box-shadow: 0 12px 32px 0 rgba(0,163,255,0.22);
 }
 .hero-image {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     height: 340px;
     background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
     border-radius: 32px;
@@ -147,7 +148,8 @@ body {
     border-radius: 24px;
     box-shadow: 0 2px 16px 0 rgba(0,163,255,0.08);
     padding: 32px 24px;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     transition: transform 0.35s cubic-bezier(.22,1,.36,1), box-shadow 0.35s cubic-bezier(.22,1,.36,1);
     animation: fadeInUp 1.2s cubic-bezier(.22,1,.36,1);
 }
@@ -177,7 +179,8 @@ body {
         align-items: center;
     }
     .feature {
-        width: 90%;
+        width: 100%;
+        max-width: 500px;
         margin-bottom: 24px;
     }
 }
@@ -205,7 +208,8 @@ body {
     border-radius: 24px;
     box-shadow: 0 2px 16px 0 rgba(0,163,255,0.08);
     padding: 32px 24px;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     font-style: italic;
     color: #333;
     transition: transform 0.35s cubic-bezier(.22,1,.36,1), box-shadow 0.35s cubic-bezier(.22,1,.36,1);
@@ -224,12 +228,22 @@ body {
 }
 
 @media (max-width: 900px) {
+    .features-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 24px;
+    }
     .testimonials-list {
         flex-direction: column;
         align-items: center;
     }
     .testimonial {
-        width: 90%;
+        width: 100%;
+        max-width: 500px;
         margin-bottom: 24px;
     }
 }
@@ -254,8 +268,8 @@ body {
 }
 .footer-social {
     position: absolute;
-    right: 200px;
-    top: 22px;
+    right: 32px;
+    top: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,7 +331,7 @@ body {
 
 .navbar-facebook {
     position: absolute;
-    right: 200px;
+    right: 32px;
     top: 8px;
     transform: none;
     display: flex;
@@ -490,6 +504,7 @@ body {
 
     .feature {
         width: 100%;
+        max-width: 100%;
         padding: 16px;
     }
 
@@ -500,6 +515,7 @@ body {
 
     .testimonial {
         width: 100%;
+        max-width: 100%;
         padding: 16px;
     }
 
@@ -515,10 +531,22 @@ body {
 
     .breadcrumb-bar {
         padding: 8px 16px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .breadcrumb-list {
         flex-direction: column;
         gap: 4px;
+    }
+
+    .footer-social,
+    .navbar-facebook {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 12px;
+        right: auto;
+        top: auto;
     }
 }
