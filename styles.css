@@ -1,3 +1,9 @@
+/* Ensure nav links are horizontal */
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
 body {
     background: #fff;
     margin: 0;
